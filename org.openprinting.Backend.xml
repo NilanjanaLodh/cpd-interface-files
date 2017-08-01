@@ -44,7 +44,6 @@
             <!--job contents: job-id , title, printer, user, state , submitted at , size -->
         </method>
         <method name="cancelJob">
-            <arg name="printer_id" direction="in" type="s"/>
             <arg name="job_id" direction="in" type="s"/>
             <arg name="status" direction="out" type="b"/>
         </method>
