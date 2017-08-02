@@ -10,8 +10,9 @@
             <arg name="printer_state" direction="out" type="s" />
             <arg name="backend_name" direction="out" type="s"/>
         </signal>
-        <signal name="PrinterRemoved">
+	<signal name="PrinterRemoved">
             <arg name="printer_id" type="s" direction="out"/>
+            <arg name="backend_name" type="s" direction="out"/>
         </signal>
         <method name="GetBackendName">
             <arg name="backend_name" direction="out" type="s" />
