@@ -11,7 +11,7 @@
             <arg name="backend_name" direction="out" type="s"/>
         </signal>
         <signal name="PrinterRemoved">
-            <arg name="printer_id" type="s" />
+            <arg name="printer_id" type="s" direction="out"/>
         </signal>
         <method name="GetBackendName">
             <arg name="backend_name" direction="out" type="s" />
@@ -31,7 +31,8 @@
         <method name="GetAllOptions">
             <arg name="printer_id" direction="in" type="s" />
             <arg name="num_options" direction="out" type="i" />
-            <arg name="options" direction="out" type="a(ssia(s))" />
+	    <arg name="options" direction="out" type="a(ssia(s))" />
+	    <!--option contents: option name, default value , number of supported values , array of supported values-->
         </method>
         <method name="getActiveJobsCount">
             <arg name="printer_id" direction="in" type="s"/>
