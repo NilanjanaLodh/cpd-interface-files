@@ -43,7 +43,7 @@
             <arg name="active_only" direction="in" type="b"/>
             <arg name="num_jobs" direction="out" type="i"/>
             <arg name="jobs" direction="out" type="a(ssssssi)"/>
-            <!--job contents: job-id , title, printer, user, state , submitted at , size -->
+            <!--job contents: job-id , title, printer-id, user, state , submitted at(time string) , size -->
         </method>
         <method name="cancelJob">
             <arg name="job_id" direction="in" type="s"/>
